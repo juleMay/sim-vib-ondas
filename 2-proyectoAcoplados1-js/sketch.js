@@ -17,7 +17,7 @@ let yvalues = new Array(95);;
 //#endregion
 
 function setup() {
-	createCanvas(windowWidth,windowHeight);
+	createCanvas(1366,768);
 	//#region Sliders
 	sliderLongitud = createSlider(0.5, 2, 2, 0.1);
 	sliderLongitud.position(180, 170);
@@ -277,11 +277,6 @@ function draw() {
 	//#endregion
 	tiempo++;
 }
-
-function windowResized() { 
-	resizeCanvas(windowWidth, windowHeight);
-}
-
 
 function mouseDragged(){
 	estadoInicial();
